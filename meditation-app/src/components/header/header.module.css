@@ -1,0 +1,155 @@
+.header 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+    flex-wrap: wrap;
+}
+
+.bg 
+{
+    background: var(--softBg);
+    height: 70%;
+    width: 70%;  
+    clip-path: circle();
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.bg.right {
+    left: 100%;
+    background: linear-gradient(9deg, var(--gradient-clr4), rgba(0,0,0, .1));
+    transform: translate(-50%, -50%); 
+}
+
+.headerLeft, .middle, .headerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerLeft
+{
+    
+    position: absolute;
+    top: 50%;
+    flex: 1;
+}
+
+.title
+{
+    z-index: -1;
+    font-size: clamp(4rem, 12vw, 12rem);
+    color: var(--clr-font);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.bgText
+{
+    background: linear-gradient(15deg, var(--gradient-clr1), var(--gradient-clr2)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: transparent; 
+}
+
+.headerImg
+{
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99!important;
+}
+
+.headerRight
+{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    flex: 1;
+}
+
+.middle
+{
+    flex: 5;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .header
+    {
+        flex-direction: column;
+        row-gap: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px)
+{
+    .header
+    {
+        flex-direction: column;
+    }
+
+    .headerLeft
+    {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+    }
+
+    .headerImg
+    {
+        top: 75%;
+    }
+
+    .headerRight
+    {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .headerImg
+    {
+        width: max-content;
+        height: 70vh;
+        top: 90%;
+    }
+
+    .header
+    {
+        flex-direction: column;
+    }
+
+    .headerRight
+    {
+        margin-top: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .headerImg
+    {
+        width: max-content;
+    }
+}

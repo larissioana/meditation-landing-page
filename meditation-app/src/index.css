@@ -1,0 +1,45 @@
+
+.light-theme
+{
+  --bg: #cbc5c9;
+  --clr-font: #373434;
+  --gradient-clr1: #121212;
+  --gradient-clr2: #897f7b;
+  --gradient-clr3: #d6caca;
+  --gradient-clr4: #beb8b8;
+  --softBg: #bfbaba;
+  --button-gradient-start: #5f575e;
+  --button-gradient-middle: #3e3b38;
+  --button-gradient-end: #3e3b38;
+}
+  
+.dark-theme
+{
+  --bg: #17181a;
+  --softBg: #252728;
+  --clr-font: #c0cacb;
+  --gradient-clr1: #E0F7FA;
+  --gradient-clr2: #38863e;
+  --gradient-clr3: rgb(24, 119, 109);
+  --gradient-clr4: rgb(11, 11, 11);
+  --button-gradient-start: #afada6;
+  --button-gradient-middle: #d9d0d0;
+  --button-gradient-end: #c8c3bd;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  overflow-x: hidden;
+  font-family: "Crimson Text", serif;
+  background: var(--bg);
+  color: var(--clr-font);
+ transition: color 1s ease-out;
+}
+

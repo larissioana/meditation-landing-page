@@ -1,0 +1,8 @@
+.featureList
+{
+    li
+    {
+        line-height: 2rem;
+        font-size: clamp(1rem, 2vw, 1.1rem);
+    }
+}

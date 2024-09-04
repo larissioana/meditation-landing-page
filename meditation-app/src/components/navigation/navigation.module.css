@@ -1,0 +1,35 @@
+.nav
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0rem 1rem;
+}
+
+.navLeft
+{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+
+    .logo
+    {
+        font-size: clamp(1rem, 2vw, 1.3rem);
+    }
+}
+
+.navRight
+{
+    margin-left: auto;
+}
+
+.toggle
+{
+    width: 6rem;
+    border-radius: 1rem;
+    padding: .3rem;
+    background: linear-gradient(45deg, var(--gradient-clr1), var(--gradient-clr2), var(--gradient-clr3));
+    border: none;
+    cursor: pointer;
+}
